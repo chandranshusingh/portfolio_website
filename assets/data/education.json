@@ -1,0 +1,23 @@
+[
+  {
+    "institution": "Illinois Institute of Technology, Chicago, IL",
+    "degree": "Masters in Information Technology & Management",
+    "duration": "2014",
+    "description": "GPA: 4.0/4.0",
+    "skills": ["Information Technology", "Management", "Data Analysis", "Project Management", "Cloud Computing"]
+  },
+  {
+    "institution": "University of Oklahoma, Tulsa, Ok",
+    "degree": "MS in Computer Systems Networking and Telecommunications Engineering",
+    "duration": "2012",
+    "description": "",
+    "skills": ["Networking", "Telecommunications", "System Architecture", "Network Security", "Infrastructure Design"]
+  },
+  {
+    "institution": "Sikkim Manipal Institute of Technology, Sikkim",
+    "degree": "Bachelor of Technology, Electronics & Communication",
+    "duration": "2009",
+    "description": "",
+    "skills": ["Electronics", "Communication Systems", "Circuit Design", "Signal Processing", "Embedded Systems"]
+  }
+]

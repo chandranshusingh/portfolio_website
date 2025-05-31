@@ -1,0 +1,51 @@
+[
+  {
+    "role": "Lead Product Owner - Enterprise Informatics",
+    "company": "Philips, Bengaluru, KA",
+    "duration": "Feb 2022 - Present",
+    "description": "Orchestrate product strategy and roadmap for Entitlement Management & Orchestration (EM&O) platforms, maximizing ROI for Radiology Informatics and HPM stakeholders. Pioneered the launch of an entitlement management MVP, reducing revenue leakage by 15%. Drove significant value by implementing an agentic AI-powered contract fulfillment process on Appian, cutting manual processing time by 40%. Championed data strategy and stakeholder alignment, translating complex business needs into actionable user stories and detailed UI/UX prototypes. Expertly managed Agile backlog, improving team velocity and ensuring high-quality product validation.",
+    "skills": ["Product Strategy", "AI Automation", "Appian", "SaaS", "BPM Orchestration", "Stakeholder Alignment", "Product Validation", "Agile Leadership"]
+  },
+  {
+    "role": "Senior Product Manager - Digital Products",
+    "company": "Data Floss LLC, Charlotte, NC, US",
+    "duration": "Jun 2020 - Dec 2021",
+    "description": "Directed digital product lifecycle, spearheading IT process enhancements and Agile transformation for E-commerce and XaaS ventures. Launched two pivotal AI/ML and AR-integrated products to market. For an E-commerce platform, deployed an AI recommendation engine (deep learning, collaborative filtering), optimizing models via A/B testing, boosting engagement by 20% and conversion by 12%. Integrated AR 'try-on' features, reducing returns by 10%. For a wellness platform, developed an ML-driven personalized coaching module (reinforcement learning, classification algorithms), improving user adherence by 30% and positive health outcomes by 15%. Defined KPIs/OKRs and collaborated with leadership on strategic roadmaps.",
+    "skills": ["Digital Product Management", "AI/ML Product Development", "Augmented Reality (AR)", "E-commerce Strategy", "XaaS", "KPI/OKR Definition", "Agile Transformation", "Product Launch"]
+  },
+  {
+    "role": "Deputy General Manager - SaaS",
+    "company": "Tata Communications Ltd, Remote",
+    "duration": "Nov 2019 - June 2020",
+    "description": "Guided strategic product development for NaaS and IaaS platforms, collaborating with cross-functional teams to define features for productivity and growth. Designed bespoke Data Studio solutions for sophisticated financial and operational reporting, enabling real-time monitoring of resource utilization and performance metrics to drive organizational roadmap. Cultivated Agile practices and provided training across the organization, mentoring development leads in best practices.",
+    "skills": ["SaaS Strategy", "NaaS", "Business Intelligence", "Agile Coaching", "Data Analytics", "Performance Monitoring", "Strategic Planning"]
+  },
+  {
+    "role": "Product Development Specialist",
+    "company": "Bank of America, Charlotte, NC, US",
+    "duration": "May 2017 - Jun 2019",
+    "description": "",
+    "skills": ["Application Development", "Team Management", "Banking Software", "Enterprise Architecture", "Agile"]
+  },
+  {
+    "role": "Development Lead",
+    "company": "Compass Group North America, Charlotte, NC, US",
+    "duration": "Jan 2013 - Apr 2017",
+    "description": "",
+    "skills": ["Development Leadership", "Full Stack", "Solution Architecture", "Mentoring", "Project Management"]
+  },
+  {
+    "role": "Software Developer",
+    "company": "Accenture, Hyderabad",
+    "duration": "Jan 2010 - Jul 2012",
+    "description": "",
+    "skills": ["Software Development", "Java", "Web Development", "Database Design", "Testing"]
+  },
+  {
+    "role": "Research Assistant",
+    "company": "IIT BHU, Varanasi",
+    "duration": "Jan 2009 - Dec 2009",
+    "description": "",
+    "skills": ["Research", "Data Analysis", "Academic Writing", "Algorithm Design"]
+  }
+]

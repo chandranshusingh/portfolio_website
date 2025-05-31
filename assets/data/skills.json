@@ -1,0 +1,54 @@
+[
+  {
+    "category": "Project Management & Agile",
+    "skills": [
+      "Scaled Agile", "SCRUM", "Kanban", "JIRA", "AZURE DevOps", "Rally", "MS Project"
+    ]
+  },
+  {
+    "category": "Product Design & UX",
+    "skills": [
+      "Adobe XD", "Figma", "Balsamiq", "User Research", "Wireframing", "Prototyping",
+      "Usability Testing", "Design Systems", "User-Centered Design", "Interaction Design",
+      "Information Architecture"
+    ]
+  },
+  {
+    "category": "AI/ML Tools & Concepts",
+    "skills": [
+      "Machine Learning", "Deep Learning", "NLP", "Computer Vision", "Predictive Modelling",
+      "TensorFlow", "MLOps", "Data Labelling", "Model Training & Optimization",
+      "Recommender Systems", "Classification Algorithms"
+    ]
+  },
+  {
+    "category": "Data Analytics & Visualization",
+    "skills": [
+      "Google Data Studio", "Tableau", "Power BI", "Kibana", "PyTorch", "Scikit-learn"
+    ]
+  },
+  {
+    "category": "Cloud Platforms",
+    "skills": [
+      "AWS", "GCP", "Firebase"
+    ]
+  },
+  {
+    "category": "Programming",
+    "skills": [
+      "Java", "JavaScript", "Python", "Angular", "React", "Dart"
+    ]
+  },
+  {
+    "category": "Frameworks & Platforms",
+    "skills": [
+      "Appian", "Flutter", "BPM", "SAP", "ServiceNow", "Salesforce"
+    ]
+  },
+  {
+    "category": "Databases",
+    "skills": [
+      "Oracle", "MySQL", "MongoDB", "Cassandra"
+    ]
+  }
+]

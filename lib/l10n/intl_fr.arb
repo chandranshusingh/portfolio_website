@@ -1,0 +1,18 @@
+{
+  "appTitle": "Chandranshu Singh | Portfolio",
+  "about": "À propos",
+  "experience": "Expérience",
+  "projects": "Projets",
+  "education": "Éducation",
+  "contact": "Contact",
+  "resume": "CV",
+  "viewOrDownloadResume": "Voir ou télécharger le CV",
+  "previewOrDownloadPDF": "Cliquez pour prévisualiser ou télécharger le PDF",
+  "rateYourExperience": "Évaluez votre expérience",
+  "submitFeedback": "Soumettre des commentaires",
+  "thankYouFeedback": "Merci pour vos commentaires !",
+  "shareYourThoughts": "Partagez vos réflexions (facultatif)",
+  "notFound": "404 - Page non trouvée",
+  "notFoundMessage": "Désolé, la page que vous recherchez n'existe pas.",
+  "goToHome": "Aller à l'accueil"
+} 
