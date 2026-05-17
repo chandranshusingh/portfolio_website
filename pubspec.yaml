@@ -82,7 +82,6 @@ flutter:
     - assets/data/projects.json
     - assets/data/education.json
     - assets/images/
-    - assets/icons/
     - assets/lottie/
     - assets/lottie/hero_animation.json
     - assets/resume.pdf
