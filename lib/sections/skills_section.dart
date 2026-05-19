@@ -24,6 +24,7 @@ class _SkillsSectionState extends State<SkillsSection> with TickerProviderStateM
   List<Map<String, dynamic>> _allSkills = [];
   List<Map<String, dynamic>> _filteredSkills = [];
   final Map<String, bool> _expandedCategories = {};
+  final ScrollController _skillsScrollController = ScrollController();
 
   Future<List<Map<String, dynamic>>> _loadSkills() async {
     final String jsonString = await rootBundle.loadString('assets/data/skills.json');
@@ -47,6 +48,7 @@ class _SkillsSectionState extends State<SkillsSection> with TickerProviderStateM
 
   Future<void> _fetchSkills() async {
     final skills = await _loadSkills();
+    if (!mounted) return;
     setState(() {
       _allSkills = skills;
       _filteredSkills = skills;
@@ -83,6 +85,7 @@ class _SkillsSectionState extends State<SkillsSection> with TickerProviderStateM
 
   @override
   void dispose() {
+    _skillsScrollController.dispose();
     _controller.dispose();
     super.dispose();
   }
@@ -106,7 +109,6 @@ class _SkillsSectionState extends State<SkillsSection> with TickerProviderStateM
         ? const EdgeInsets.symmetric(vertical: 32, horizontal: 10)
         : const EdgeInsets.symmetric(vertical: 80, horizontal: 40);
     final bool useScroll = _filteredSkills.length > 3;
-    final ScrollController scrollController = ScrollController();
 
     return VisibilityDetector(
       key: const Key('skills-section'),
@@ -179,11 +181,11 @@ class _SkillsSectionState extends State<SkillsSection> with TickerProviderStateM
                   SizedBox(
                     height: isMobile ? 420 : 340,
                     child: Scrollbar(
-                      controller: scrollController,
+                      controller: _skillsScrollController,
                       thumbVisibility: true,
                       radius: const Radius.circular(12),
                       child: ListView(
-                        controller: scrollController,
+                        controller: _skillsScrollController,
                         padding: EdgeInsets.zero,
                         children: _filteredSkills.map((category) {
                           return _SkillCategory(

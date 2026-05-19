@@ -7,24 +7,45 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:go_router/go_router.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'package:profile_resume/main.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
+  setUpAll(() {
+    GoogleFonts.config.allowRuntimeFetching = false;
+  });
+
+  testWidgets('portfolio app renders the landing page', (WidgetTester tester) async {
     await tester.pumpWidget(const PortfolioApp());
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    expect(find.text('Tech Know Trees'), findsWidgets);
+    expect(tester.takeException(), isNull);
+  });
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
+  testWidgets('not found page returns home through GoRouter', (WidgetTester tester) async {
+    final router = GoRouter(
+      initialLocation: '/missing',
+      routes: [
+        GoRoute(
+          path: '/',
+          builder: (context, state) => const Scaffold(
+            body: Text('Home route'),
+          ),
+        ),
+      ],
+      errorBuilder: (context, state) => const NotFoundPage(),
+    );
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    await tester.pumpWidget(MaterialApp.router(routerConfig: router));
+
+    expect(find.text('Page Not Found'), findsOneWidget);
+
+    await tester.tap(find.text('Go to Home'));
+    await tester.pumpAndSettle();
+
+    expect(find.text('Home route'), findsOneWidget);
+    expect(tester.takeException(), isNull);
   });
 }
