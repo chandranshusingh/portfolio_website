@@ -65,7 +65,7 @@ class _AnimatedServiceCardState extends State<AnimatedServiceCard> {
           duration: const Duration(milliseconds: 200),
           curve: Curves.easeOut,
           transform: Matrix4.identity()
-            ..scale(_isTapped ? 0.97 : (_isHovered ? 1.04 : 1.0)),
+            ..scaleByDouble(_isTapped ? 0.97 : (_isHovered ? 1.04 : 1.0)),
           decoration: BoxDecoration(
             color: widget.color ?? theme.colorScheme.surface,
             borderRadius: BorderRadius.circular(24),
