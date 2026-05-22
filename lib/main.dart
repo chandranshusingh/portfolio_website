@@ -195,7 +195,7 @@ class _PortfolioAppState extends State<PortfolioApp> {
         ),
         iconTheme: const IconThemeData(color: Colors.white),
         appBarTheme: AppBarTheme(
-          backgroundColor: AppColorsDark.primary.withAlpha((204 * 255).round()),
+          backgroundColor: AppColorsDark.primary.withAlpha(204),
           elevation: 0,
           iconTheme: const IconThemeData(color: Colors.white),
           titleTextStyle: GoogleFonts.playfairDisplay(
@@ -499,7 +499,7 @@ class NotFoundPage extends StatelessWidget {
             ),
             const SizedBox(height: 32),
             ElevatedButton(
-              onPressed: () => Navigator.of(context).pushReplacementNamed('/'),
+              onPressed: () => GoRouter.of(context).go('/'),
               child: Text('Go to Home'),
             ),
           ],
