@@ -47,6 +47,8 @@ class _SkillsSectionState extends State<SkillsSection> with TickerProviderStateM
 
   Future<void> _fetchSkills() async {
     final skills = await _loadSkills();
+    if (!mounted) return;
+
     setState(() {
       _allSkills = skills;
       _filteredSkills = skills;
