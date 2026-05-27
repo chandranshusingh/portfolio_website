@@ -19,6 +19,9 @@ class ResumeSection extends StatefulWidget {
 }
 
 class _ResumeSectionState extends State<ResumeSection> with TickerProviderStateMixin {
+  static const String _resumeDownloadUrl =
+      'https://raw.githubusercontent.com/chandranshusingh/portfolio_website/main/assets/resume.pdf';
+
   double _opacity = 0.0;
   late AnimationController _controller;
   late Animation<Offset> _slideAnimation;
@@ -86,15 +89,13 @@ class _ResumeSectionState extends State<ResumeSection> with TickerProviderStateM
           _showResumePreview();
         }
       } else {
-        // For mobile platforms: Use url_launcher with asset path
-        final Uri resumeUri = Uri.parse('https://your-resume-url.com/resume.pdf'); // Replace with actual URL
-        
-        if (await canLaunchUrl(resumeUri)) {
-          await launchUrl(
-            resumeUri,
-            mode: LaunchMode.externalApplication,
-          );
-        } else {
+        final Uri resumeUri = Uri.parse(_resumeDownloadUrl);
+        final bool launched = await launchUrl(
+          resumeUri,
+          mode: LaunchMode.externalApplication,
+        );
+
+        if (!launched) {
           debugPrint('Could not launch resume URL for download.');
           if (mounted) {
             ScaffoldMessenger.of(context).showSnackBar(
