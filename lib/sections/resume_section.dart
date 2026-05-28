@@ -87,8 +87,10 @@ class _ResumeSectionState extends State<ResumeSection> with TickerProviderStateM
         }
       } else {
         // For mobile platforms: Use url_launcher with asset path
-        final Uri resumeUri = Uri.parse('https://your-resume-url.com/resume.pdf'); // Replace with actual URL
-        
+        final Uri resumeUri = Uri.parse(
+          'https://raw.githubusercontent.com/chandranshusingh/portfolio_website/main/assets/resume.pdf',
+        );
+
         if (await canLaunchUrl(resumeUri)) {
           await launchUrl(
             resumeUri,
