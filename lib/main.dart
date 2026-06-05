@@ -499,8 +499,8 @@ class NotFoundPage extends StatelessWidget {
             ),
             const SizedBox(height: 32),
             ElevatedButton(
-              onPressed: () => Navigator.of(context).pushReplacementNamed('/'),
-              child: Text('Go to Home'),
+              onPressed: () => context.go('/'),
+              child: const Text('Go to Home'),
             ),
           ],
         ),

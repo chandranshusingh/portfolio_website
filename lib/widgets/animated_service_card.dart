@@ -53,6 +53,8 @@ class _AnimatedServiceCardState extends State<AnimatedServiceCard> {
   /// Build the main card widget
   Widget _buildCard(BuildContext context) {
     final theme = Theme.of(context);
+    final scale = _isTapped ? 0.97 : (_isHovered ? 1.04 : 1.0);
+
     return MouseRegion(
       onEnter: (_) => setState(() => _isHovered = true),
       onExit: (_) => setState(() => _isHovered = false),
@@ -64,8 +66,7 @@ class _AnimatedServiceCardState extends State<AnimatedServiceCard> {
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 200),
           curve: Curves.easeOut,
-          transform: Matrix4.identity()
-            ..scale(_isTapped ? 0.97 : (_isHovered ? 1.04 : 1.0)),
+          transform: Matrix4.identity()..scaleByDouble(scale, scale, 1.0, 1.0),
           decoration: BoxDecoration(
             color: widget.color ?? theme.colorScheme.surface,
             borderRadius: BorderRadius.circular(24),
